@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CarHireLocation",
+		"_postman_id": "d81625c5-3c0f-5eca-0c97-ad96781fb9b6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Car Hire Location",
+			"request": {
+				"url": "car-hire-location-stg-a243-55-master.qcpaws.qantas.com.au/car-hire/locations",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
