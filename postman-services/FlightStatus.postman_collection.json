@@ -1,0 +1,42 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FlightStatus",
+		"_postman_id": "8b110f5e-4167-a036-58c5-c4f128b47f9b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FlightStatus /appInfo",
+			"request": {
+				"url": "http://flightstatus.qcpaws.qantas.com.au/flightstatus/appInfo",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "http://flightstatus.qcpaws.qantas.com.au/flightstatus/appInfo"
+			},
+			"response": []
+		},
+		{
+			"name": "flightstatus-airports",
+			"request": {
+				"url": "http://flightstatus.qcpaws.qantas.com.au/flightstatus/airports",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ns2:flightOperationsEventMsgRq xmlns:ns2=\"urn:www.qantas.com:FlightOperations:flightstatus:v1\" xmlns:ns8=\"urn:www.qantas.com:FlightOperations:flightstatus:Events:v1\" xmlns:ns0=\"www.qantas.com:FlightOperations:flightstatus:Legdata:v1\" xmlns:ns9=\"urn:www.qantas.com:FlightOperations:flightstatus:SubEvents:v1\" xmlns:qan1=\"www.qantas.com:FlightOperations:flightstatus:Airport:v1\"><ns2:eventDetails><ns8:EventName>FLIGHT_PLAN</ns8:EventName><ns8:EventID><ns8:Airline>QFA</ns8:Airline><ns8:FlightNumber>2647</ns8:FlightNumber><ns8:Date>2017-09-26</ns8:Date><ns8:ArrivalAirport>PER</ns8:ArrivalAirport><ns8:DepartureAirport>KTA</ns8:DepartureAirport><ns8:CommercialSuffix/><ns8:Event_SequentID>1</ns8:Event_SequentID><ns8:Sequent>0</ns8:Sequent></ns8:EventID><ns8:EventTime>2017-09-20T00:33:57.919+10:00</ns8:EventTime></ns2:eventDetails><ns2:LegDetails><ns0:LegData FlightClassification=\"D\"><ns0:OperationalStatus CodeContext=\"P\">101</ns0:OperationalStatus><ns0:ServiceType>J</ns0:ServiceType><ns0:OwnerAirline><ns0:Airline>N9</ns0:Airline><ns0:FlightNumber>2647</ns0:FlightNumber></ns0:OwnerAirline><ns0:AirportResources Usage=\"Planned\"><ns0:Resource DepartureOrArrival=\"Arrival\"><ns0:PublicTerminal>T4</ns0:PublicTerminal></ns0:Resource></ns0:AirportResources><ns0:OperationTime CodeContext=\"\" OperationQualifier=\"SD\" TimeType=\"LT\">2017-09-26T19:25:00.000+08:00</ns0:OperationTime><ns0:OperationTime CodeContext=\"\" OperationQualifier=\"SA\" TimeType=\"LT\">2017-09-26T21:30:00.000+08:00</ns0:OperationTime></ns0:LegData></ns2:LegDetails></ns2:flightOperationsEventMsgRq>"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
