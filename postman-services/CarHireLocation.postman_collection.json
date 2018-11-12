@@ -10,7 +10,7 @@
 		{
 			"name": "Car Hire Location",
 			"request": {
-				"url": "car-hire-location-stg-a243-55-master.qcpaws.qantas.com.au/car-hire/locations",
+				"url": "",
 				"method": "GET",
 				"header": [],
 				"body": {},

@@ -9,7 +9,7 @@
     "item": [{
         "name": "flightstatus-airports",
         "request": {
-            "url": "http://flightstatus.qcpaws.qantas.com.au/flightstatus/airports",
+            "url": "",
             "method": "GET",
             "header": [{
                 "key": "Content-Type",
